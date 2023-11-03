@@ -1,0 +1,35 @@
+/* pseudo element me aap kisi specific portion ko style karte ho ya kuchh
+insert karte ho css ke through.
+pseudo element or pseudo class me fark sirf colon ":" ka hai,
+psseudo class me sirf 1 colon hota hai or element me 2.
+syntax=
+selector::pseudoelement{
+
+} */
+
+p::first-letter{
+    font-size: 35px;
+    color:red;
+}
+
+p::first-line{
+    font-size: 35px;
+    color:rgb(76, 0, 255);
+}
+/*dynamically css se html me content dalna aise hota hai : -
+before=pehle lagana hai
+content : image ya text ho sakta hai
+after= badme lagana hai
+ye dono me white space count hoga so use it*/
+h1::before{
+    content: url(../images/icon.png);
+}
+h1::after{
+    content:" this is added after heading"
+}
+/* "::" = universal
+selection= jab text select kare*/
+::selection{
+    color:red;
+    background-color: yellow;
+}

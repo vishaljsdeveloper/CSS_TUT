@@ -1,0 +1,52 @@
+/* html me koi bhi element ek rectangular box hota hai.agar border denge to pata chal jayga.
+wo rectangular box kaise behave karega wo display ke property pe depend karta hai.
+har element ke pas ek default display property hota hai.
+display property ka 4 value important hota hai . or bhi hota hai.deafault me block or inline hota hai.
+1.block ex- div,p,h1-h6 ,form etc
+2.inline ex- a , span, img etc
+3.inline-block
+4.none */
+
+/* block= 1.new line se start hoga
+2. full width line lega 
+3. height or width de sakte hai 
+
+inline= 1.new line se start nai hoga 
+2. no full width 
+3. height or width nai apply kar sakte hai. 
+
+inline-block=1.new line se start nai hoga 
+2. no full width 
+3. height or width de sakte hai.  */
+/* note: - jab hum inline block use kar rahe hai 2 div me to gap aa raha hai bich me isliye 
+width 50% use karne par 1 div niche aa raha hai. to gap hatane ke liye float left ka use karo
+to width 50% bhi use kar sakte ho */
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+.display{
+    border:1px solid red;
+    width:45%;
+    height:100px;
+    /* float: left; */
+    /* display:inline; inline lagate hi dono 1 line me aa jayga. 
+    dono div utna hi width or height lega jitna jarurat hai, de nai sakte khud se.
+    by default div block hota hai.*/
+    display:inline-block;
+}
+
+#div1{
+    border:1px solid red;
+    width:50%;
+    height:100px;
+}
+
+.div2{
+    border:1px solid red;
+    width:50%;
+    height:100px;
+    /*display:none; ye element ko pura hata hi dega hi . space bhi use nai karega*/
+    visibility:hidden; /*ye element ko pura nai hatayga. space bhi use karega*/
+}

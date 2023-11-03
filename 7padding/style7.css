@@ -1,0 +1,30 @@
+/*padding= gap between div and its content
+margin=gao between 1 element and another  element.
+padding me minus value nai de sakte lekin margin mr minus
+value de sakte hai.
+div ko center me lane ke liye margin=auto karna parta hai.
+margin collapse karta hai=agar first div margin-bottom me 30 px ka de or
+2nd div ko margin-top 50px diya to TOTAL margin 50 px ka hi hoga na ki 80px. jo
+bara value hoga usi ko lega dono add nai hoga . isi ko margin collapse bolte hai.
+margin collapse bas top or bottom me kam karta hai left-right me nai.
+left right me margin add ho jayga.
+ #div1{
+    border:1px solid red;
+    padding-top:50px;
+    padding-bottom: 20px;
+    padding-right: 10%;
+    padding-left:20%
+} */
+/*padding for all four side
+ #div1{
+    padding:50px;
+} */
+ /*different padding for all side
+  #div1{
+    padding:50px 10px 20px 30px;
+}  top+bootom=50px and right+left=100px */
+ #div1{
+    border:1px solid red;
+    padding:50px 100px;
+} 
+

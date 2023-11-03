@@ -1,0 +1,62 @@
+/* responsive website: pehle jab internet bana tha to website bas computer pe hi chalta tha.
+ye assume kiya gaya tha us time ki website bas computer pe hi chalega or us time sara computer 
+ka screen size same hi aata tha.aaj ke date me 2 inch ke mobile se lekar 56inch ke tv par 
+internet chal raha hai.isliye pehle ek dam strick pixel mention karte the humlog.
+jab devices vary karne laga to problem aana start hua .website mobile pe bahut chhota dikhne lag gaya
+. zoom karke dekhna parta tha. to is problem ko solve karne ke liye mobile ka alag website bana start kiya
+gaya "m." karke. lekin ab resposiveweb design 1 ko alag website screen ke size ke hisab se adapt karwa
+sakte hai. responsive me readability badh jata hai.for example agar hum koi image lete hai left side me
+ or uska width 40% karte hai to wo mobile me bahut chhota dikhega or right side ka area bhi khali reh jayga.
+ to hum media query se uska width 100% kar denge taki readability badh jaay. waise hi article bhi agar 
+ right side me hai or uska width bhi kam hai to uska width bhi mobile ke liye 100% kar denge.
+ responsive web design se mujhe zoom nai karna parega padhne ke liye ya dekhne ke liye to 
+ readability badhega . aaj kal 80% website mobile pe hi open hota hai isliye MOBILE FIRST trend chal
+ raha hai ki jab website design karo to pehle mobile ke liye karo. 
+ basic CSS se responsive karne ke liye 3 chij ki jarurat parti hai
+ 1. viewport metatag
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ viewport: white wala part jaha content display hoga.
+ width: jo width hai wo device ke width ke barabar karo.apne ma se width assume mat karo
+ initial-scale:1.0 rakho apne man se zoom ya zoom out mat karo. waise mobile ke liye
+ browser apne man se zoom out kar deta hai.
+ 2. media query: different different width ke liye different tarike se apna web page design kar sakte ho.
+ aapko pata hai mobile ka width itna hai , tablet ka width itna hai etc. to uske anusar change kar sakte hai,
+
+ 3. audio and video responsive  */
+
+ #div1{
+     width:70%;
+     float:left;/*float lagate hi next div iske side se start hoga agar fit hua to*/
+     background-color: lawngreen;
+ }
+ #div2{
+    width:30%;
+    float:left;
+    background-color: rosybrown;
+}
+/*above structure is good for desk top. lekin ise agar chhota karte jaynge to div2 bahar chala jayga right side se
+to mobile pe bhi div2 right side se bahar chala jayga . matlab 100% se bhi bahar aa jayga.
+isliye humlog media query use karke 2nd div ko niche la denge 1st div ke mobile ke liye.
+tablet ke liye 50% width kar denge dono ka.
+media query likhne se pehle apne viewport ka height or width jaan sakte ho online tool se.
+onlineutilitywebsite.com is a tool to check view port. browser ko chhota bara karke check kar sakte hai view port.
+400 ke bad mobile start ho jat hai to mobile ke liye 400 ya 500 le sakte ho. 768 se ipad 
+start hota hai uske liye dekh lo. ipad or mobile pe jarur check kar lena*/
+@media screen and (max-width: 768px){/*max width matlab yaha tak ye kaam karega*/
+    #div1{
+        width:50%;
+    }
+    #daiv2{
+        width:50%;
+    }
+}
+@media screen and (max-width: 400px){
+    #div1{
+        width:100%;
+    }
+    #daiv2{
+        width:100%;
+        color:white;
+        background-color: black;
+    }
+}

@@ -1,0 +1,42 @@
+/* CSS Grid is the new layout model in CSS.
+is se pehle flex tha . ab bhi hai flex.
+starting me table se layout design hota tha 
+uske bad DIV or Span se layout design hota tha.
+flex 1 dimensional hai. wo bas row me kaam karta hai wahi grid
+2 dimensional hai. ye row or horizontal me kaam karta hai .
+flexbox is good for space distribution.*/
+/* GRID LINES-
+1.The lines between column are called column lines.1 column me 2 line hota hai.
+2.The lines between rows are called row lines. 1 row me 2 line hota hai. 
+lines are used to merge two column or two rows.
+number of line = N+1 where N is row or column.
+flex column me divide karta hai or grid normally row me divide karta hai.
+note: inline-grid karne par div utna hi space lega jitna uska content hoga.*/
+
+.grid-container{
+    background-color: red;
+    padding:20px;
+    display:grid;
+    /* kitne column me divide karna hai total div ko uske liye grid template columns use karte hai.
+    har column 1-1 div occupy kar lega. isme har column ka value pixel , percentage ya auto me de sakte hai.
+    auto me barabar barabar me width decide kar lega  or pura width cover karega*/
+    grid-template-columns: 200px 300px 200px;  /* auto 50% auto;*/
+    /* jab column me divide kiye to jitna row bana usko height de sakte hai grid template rows se  */
+    /* grid-template-rows: 100px 200px auto;  height check karne ke liye comment kar raha hun*/
+    /* column ke bich me gap de sakte hai grid-column-gap se.
+       row ke bich me gap de sakte hai row-column-gap se*/
+       grid-column-gap: 10px;
+       grid-row-gap: 10px;
+       justify-content: space-evenly; /*other property: start,end,center,space-between,space-around,
+       space-evenly= har taraf same gap rahega, space around se different or better laga mujhe*/
+       height:400px;
+       align-content: space-evenly;/*other property=same as justify content*/
+
+}
+.grid-item{
+    background-color:wheat;
+    border:1px solid black;
+    padding:20px;
+    font-size:40px;
+    text-align: center;
+}

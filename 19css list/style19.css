@@ -1,0 +1,15 @@
+ul{
+/* list-style-type:square;  image bhi de sakte hai*/
+list-style-image: url(../images/icon.png);
+/* list-style-position: outside; ye default hai */
+list-style-position: inside;
+}
+
+ol{
+list-style-type:lower-roman;/*decimal , decimal-leading-zero,lower-alpha etc*/
+}
+li{
+    border:1px solid black;
+    /* icon bahar hai border ke or mai chahta hun wo andar aa jay uske liye 
+    list style position use karenge inside or outside  */
+}

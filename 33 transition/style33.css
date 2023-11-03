@@ -1,0 +1,32 @@
+/* transition: kisi bhi element ka jab property change hota hai kisi bhi state pe jaise hover pe 
+to wo jhatke/jerk se hota hai . wo smooth karna or as a animation karna ko transition bolte hai. 
+CSS me transition karne ke liye 2 property compulsory hai un dono ke bina to nai hi hoga,
+waise hote 3-4 property hai lekin 2 to minimum hai.
+1.transition-property: kis property ko transition karwana hai
+2. transition-duration: kitne time me transition hona hai*/
+#div1{
+    width:100px;
+    height:100px;
+    background-color: red;
+    margin:100px;
+/* transition-property: width;
+transition-duration: 1s; */
+/* transition-property: background-color;
+transition-duration: 1s; */
+/*humlog multiple property ko bhi transition kar sakte hai*/
+transition-property: width, background-color;/*all bhi likh sakte hai yaha*/
+transition-duration: 1s, 2s;/*time mili second me bhi de sakte hai like 50ms, 500ms*/
+/*3rd property= transition-delay: kitne der bad transition start hoga*/
+/* transition-delay: 500ms; */
+/*transition-timing-function:ease-in-out;*//*kitna speed me start or end karna hai. iska bahut sara value hai
+ek-ek karke sab try kar sakte ho*/
+/* transition:property,duration,timing-function, delay; ye short hand hai. kisi ko bhi chhor sakte hai
+jaise we rarely use delay and timing function to wo dono ko chhor denge : */
+transition:width 2s, height 3s;
+
+}
+#div1:hover{
+    width:200px;
+    height:200px;
+    background-color: green;
+}

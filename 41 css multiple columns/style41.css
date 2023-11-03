@@ -1,0 +1,21 @@
+/* best example of multiple column is news paper */
+div{
+    column-count:3;/*kitne column me divide karna hai*/
+    column-gap:50px;/*column ke bich me kitna gap hoga*/
+    /*column-rule-style:solid;*//*border ka har property dal sakte hai solid, dotted,dashed,groove etc*/
+    /* column-rule-width: 1px;
+    column-rule-color: red;  column rule ke 3no chij ko ek bar me kar sakte hai border jaisa*/
+    column-rule: 1px solid red;
+
+}
+/*abhi heading 1 column pura le le raha hai lekin hum chahte hai heading pura width le or
+baki content column me ho*/
+h1{
+    column-span:all;/*ab ye pura width lega*/
+}
+/* hum column ka minimum width bhi de sakte hai. jaise hi minimum width se kam hoga to wo 
+column kam karta jayga .
+responsive me jakar check karo*/
+div{
+    column-width: 300px;
+}

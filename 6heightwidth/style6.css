@@ -1,0 +1,17 @@
+body{
+    border:1px solid rgb(58, 58, 202);
+}
+
+#div1{
+    background-color:blueviolet ;
+    /*height:50%; */
+    width:70%;
+    max-width: 700px;
+    max-height:500px ;
+    /*min-width: 1000px;
+    min-height:800px ;*/
+}
+/*height:50%; 
+percentage hamesa apne parent ke size pe depend karta hai
+agar parend body ka 50% hai or hum element me bhi 50% 
+lete hai to wo body ka 25% hoga*/

@@ -1,0 +1,25 @@
+/* 2 ya 2 se jada colour aapas me smoothly milte hai use gradient kaha jata hai.
+gradient 2 tarika se lag sakta hai:
+1.linear gradient : default dirction=top to bottom
+2.radial gradient: default shape=eclipse
+gradient lagane ke liye background-image property ka use karna hota hai*/
+
+#div1{
+    height: 400px;
+    border:1px solid grey;
+    /* background-image: linear-gradient(green,blue); */
+    /* background-image: linear-gradient(green,blue,red); */ /*2 se jada color bhi use kar sakte hai*/
+    background-image: linear-gradient(to right ,green,blue, red);
+    /*direction bhi change kar sakte hai "to" laga kar . other direction=bottom-right,top-left etc ya degree bhi de 
+    sakte hai jaise 160deg,120deg etc */
+}
+
+#div2{
+    height: 400px;
+    border:1px solid grey;
+    margin-top: 30px;
+    /* background-image: radial-gradient(blue,red,green); */ /*by default shape=eclipse*/
+    /* background-image: radial-gradient(circle, blue,red,green); *//* shape change kar sakte hai*/
+    background-image: radial-gradient(circle, blue 20%,red 30%,green 50%); 
+    /* konsa colouer kitna space occupy karega wo bhi mention kar sakte hai percentage me */
+}

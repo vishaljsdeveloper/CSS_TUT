@@ -1,0 +1,98 @@
+/* we have studies the basic selectors:
+1.type  selector/element selector
+2.id selector
+3.class selector
+4.Pseudo class  : 
+5. pseudo element :: 
+*/
+/*6. ATTRIBUTE SELECTOR : it is use to style the attributes. mostly uses to style form attributes like input
+a[href="https://example.com"]{
+color:red;
+}
+input[type="text"]{
+    border:1ps solid red;
+}*/
+/* 7. UNIVERSAL SELECTOR: it is mostly used for debugging otherwise not. ye html ke har element pe apply ho jayga
+isliye isko border dekar debugging me use karte hai. 
+
+*{
+    color:green;
+}*/
+/* 8. COMBINATOR SELECTOR: there are 4 types of combinator selector- */
+/* i) Descendent combinatory (Child at any stage) direct child ho ya na ho koi matlab nai hai 
+
+.red-p span{
+    color:green;
+}*/
+/* ii)Child combinatory(Dirct child)  space ke jagah pe greater than ka sign aayga
+.red-p>span{
+color:red;
+}*/
+/* iii)Adjascent combinatory(right after sibling) 
+.red-p + h1{
+    color:green;
+}*/
+/* iv) General sibling combinatory (All sibling) 
+.red-p ~ h1{
+    color:green;
+} */
+ /* 9. ADD SELECTOR : same peoperty bahut sare me dene ke liye
+ .red-p,h1{
+     color:green;
+ } */
+/* this is element selector
+li{
+    color:red;
+} */
+
+/* this is id selector
+ #list2{
+    color:red;
+} */
+/*this is class selector
+ .list5{
+    color:red;
+} */
+
+/*this is pseudo class
+ a:hover{
+    color:red;
+} */
+/*this is pseudo element
+ p::first-line{
+    color:red;
+} */
+/* this is attribute selector 
+a[href="https://www.google.com"]{
+    color:red;
+}
+input[type="password"]{
+    color:red;
+} */
+/* this is universal selector used for debugging
+ *{
+    border:1px solid red;
+} */
+/* Descendent combinatory selector - child ka child bhi descendent kehlayga
+div a{
+    color:red;
+} */
+/* direct child combinator- child ka child nai aayga isme
+div>a{
+    color:red;
+} */
+/* Adjascent combinatory - sibling just bad hona chahiye .bich me koi or nai
+div + a{
+    color:red;
+} */
+/*sibling combinator - isme bich me koi hoga to bhi kam karega
+ div~a{
+    color:red;
+}  */
+/* Add selector - multiple chij  ko ek type ka property dena ho to use karte hai */
+h1,p{
+    color:red;
+}
+
+
+

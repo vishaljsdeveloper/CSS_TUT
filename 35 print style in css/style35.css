@@ -1,0 +1,24 @@
+/* print karne ke liye,speech reader ke liye hum alag se css likh sakte hai @media ka use karke.
+mai chahta hun jab print kare koi to image hat jaay or style change ho jaay paragraph ka
+by default jo css likhte hai screen or print dono ke liye hota hai.
+screen ke liye media likhne ka jarurat nai hai jaise niche likha hai bas
+ print ke liye alag se media likh do */
+
+@media screen {
+    /*ye screen ke liye hai*/
+    p{
+        font-size: 20px;
+    }
+}
+@media print{
+p{
+    font-size: 30px;
+
+}
+img {
+    display:none;
+}
+div{
+    width:50%;
+}
+}

@@ -1,0 +1,71 @@
+#img1{
+    width:100px;
+    height:auto;
+    float:right;
+    padding:10px;
+
+}
+
+#img2{
+    width:100px;
+    height:auto;
+    float:left;
+    padding:50px;
+}
+ul{
+    background-color: green;
+    list-style-type: none;
+    overflow: auto;
+}
+li{
+    color:white;
+    padding: 5px 10px;
+    float:left;/* float lagate hi li apne container (ul) se bahar aa jayga.
+                usko thik karne ke liye container me overflow auto karna hoga
+                li jo ek row me lane ke liye hum li ka display bhi inline ya 
+                inline-block kar sakte hai*/
+}
+
+#p1{
+    border:1px solid red;
+    overflow: auto;
+}
+#img3{
+    float:right;/* jaise hi float right karenge to image container ke bahar chala jayga.
+                  usko thik karne ke liye container (P) pe overflow auto lagana hoga.
+                  jab bhi float use karo to container pe overflow use karna chahiye 
+                  */
+                  
+}
+/*clear= ye use hota hai ye batane ke liye ki kya ek element dusre floated element 
+ke right ya left me rahega ya nahi.
+clear floated element me bhi lag sakta hai or non floated me bhi lag sakta hai.
+agar clear kar denge to wo dusre line me aa jata hai.*/
+ #img4{
+    float:right;/*dono image ek dusre ke side me aa jayga float right side me
+                  mai chahta hun ki dusra image pehle image ke niche aa jay lekin right side me hi*/
+    clear:right;/*aap kisi FLOATED element ke right me nai reh sakte.
+                 both = aap kisi floated element ke right ya left me nai reh sakte.*/
+                  
+ }
+ #content{
+width:70%;
+background-color: green;
+height:200px;
+float:left;
+ }
+
+ #sidebar{
+width:30%;
+background-color: indianred;
+height:150px;/*jaise hi side bar ka width 200 px se kam karke 150px karenge waise hi footer sidebar ke niche aa jayga.
+               div new line leta hai lekin yaha float use kiye hain to use laga right side ka bacha hua space hi new
+               line hai. isko thik karne ke liye clear ka use karenge.*/
+              
+float:left;
+ }
+
+ #footer{
+    background-color:blue;
+    clear:both; /*here we can also use left */
+     }

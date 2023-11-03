@@ -1,0 +1,26 @@
+#color-box{
+    background-color: green;
+    width:500px;
+    height:200px;
+    margin-bottom: 20px;
+    opacity: 0.5;/*opacity is used to give transparancy.
+    its value ranges from 0 to 1 where 0 is fully transparen and by default everything has 1 opacity
+    uses: image upload ho raha hai to uska preview ko aadha transparent kar diya jata hai.
+    hover pe transparent kar diya jata hai*/
+}
+img:hover{
+    opacity:0.6;
+}
+#yellow-box{
+    background-color:yellow;
+    width:500px;
+    height:200px;
+    margin-top: 20px;
+}
+#red-box{
+    background-color:red;
+    width:300px;
+    height:200px;
+    margin-top: -100px;
+    opacity:0.4;
+}

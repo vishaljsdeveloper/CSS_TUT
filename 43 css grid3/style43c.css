@@ -1,0 +1,39 @@
+/* steps to create layout:
+1.kitna column me divide karna hai wo decide karo. yaha 6 kiya hai. 3 main,2 right or 1 menu
+2.total row decide karo
+3.fir sabko naam do sequentially.
+4. 6 column me or 3 row se jo grid bana  usme kon kaha kaha rahega wo decide karo 
+or parent mre grid template areas me us us grid me naam likh do uska.DONE */
+.grid-container{
+    background-color: red;
+    padding:20px;
+    display:grid;
+    grid-template-areas: 
+    "header header header header header header"
+    "menu main main main right right "
+    "menu footer footer footer footer footer";
+    grid-gap:10px;/*row or column dono me gap lene le liye hai ye property*/
+}
+.grid-item{
+    background-color:wheat;
+    border:1px solid black;
+    padding:20px;
+    font-size:30px;
+    text-align: center;
+}
+#grid1{
+grid-area: header;
+}
+#grid2{
+    grid-area: menu;
+    padding-top: 120px;
+}
+#grid3{
+    grid-area: main;
+}
+#grid4{
+    grid-area: right;
+}
+#grid5{
+    grid-area: footer;
+}

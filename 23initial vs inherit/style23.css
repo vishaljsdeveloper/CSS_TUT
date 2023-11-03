@@ -1,0 +1,22 @@
+/* initial or inherit  value hai jo har css property ke sath lag sakte hai 
+1.initial= jo default value hai css property ka wo lag jayga. jaise link ka default
+color blue hota hai to wo lag jayga
+2.inherit=jo parent ka value hai wo lag jayga. jaise parent ka color
+green hai to wo lag jayga*/
+
+#green{
+    color:green;
+
+}
+#blue{
+    color:red;
+
+}
+#initial{
+    color:initial;
+    
+}
+#inherit{
+    color:inherit;
+    
+}

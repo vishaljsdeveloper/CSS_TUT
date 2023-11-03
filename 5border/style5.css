@@ -1,0 +1,42 @@
+#ab{
+    border-style:solid;
+    border-width:5px;
+    border-color:red;/*width ki tarah isko bhi charo ke liye alag alag use kar sakte hai ya
+     top bottom and right left ke liye*/
+     border-radius:30px;/*50% is used for making a circular radius
+     isko bhi 4 me alag alag use kar sakte hai*/
+     border-collapse: collapse; /*=collabse karke table me use karte hai td ke cut ko hatane ke liye*/
+}
+
+#bc{
+    border-style:dotted;
+    border-width:5px 2px;/*top and bottom=5px, left and right=2px*/
+}
+#cd{
+    border-style:dashed;
+    border-width:5px 2px 3px 4px;/*4 ka alag alag clockwise direction me*/
+}
+#de{
+    border-style:double;
+}
+#ef{
+    border-style:groove;
+}
+#fg{
+    border-style:inset;/*other=ridge, none , outset*/
+}
+#gh{
+    border-style:solid dashed none dotted;/*4 side ka alag alag border. direction = clock wise*/
+}
+#hi{
+    border-style:solid dotted;/*solid= top and bottom , dotted=right and left*/
+}
+
+/*shorthand
+for all side
+    border: 5px solid green
+    for single side
+    border-top-style : solid;
+    border-top-width : 5px;
+    border-top-color : red;
+*/

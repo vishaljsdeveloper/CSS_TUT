@@ -1,0 +1,11 @@
+div{
+    border:1px solid green;
+    width:500px;
+    background-color: yellowgreen;
+    margin:100px;
+    padding:20px;
+    /* box-shadow: 10px 15px 15px  3px grey;*//*distance from horizontal,distance from vertical.blur radius, 
+    spread radius(kitna failega),color*/
+   /* box-shadow: 10px 15px 15px  3px grey inset;*//*inset=box ke andar shadow rahe*/
+    box-shadow: 10px 15px 15px  3px grey inset, -10px -15px 15px  3px red inset;/*multiple shadow rahe*/
+}

@@ -1,0 +1,32 @@
+/*there are three basic selector in css
+1.Element selector
+2.class selector
+3.Id selector*/
+
+/*1. element selector*/
+
+p{
+    color:red;
+}
+
+/*2. id selector*/
+
+#p3{
+    color:blue;
+}
+
+/*3. class selector*/
+
+.green-text{
+    color:rgb(17, 228, 98);
+}
+
+/*header color class se lega or font size id se lega*/
+
+#font{
+    font-size: 28px;
+}
+
+.underline-h{
+    text-decoration: underline;
+}

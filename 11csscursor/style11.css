@@ -1,0 +1,16 @@
+div{
+    border:1px solid red;
+    /* cursor:auto; */
+    /* cursor:all-scroll; */
+    /* cursor:cell; */
+    /* cursor:col-resize; */
+    /* cursor:crosshair; */
+    /* cursor:e-resize; */
+    /* cursor:grab; */
+    /* cursor:help; */
+    /* cursor:not-allowed; */
+    /* cursor:pointer; */
+    /* cursor:progress; */
+    /* cursor:wait; */
+    cursor:zoom-in;
+}

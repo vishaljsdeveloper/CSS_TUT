@@ -1,0 +1,46 @@
+#text{
+    width:700px;
+    border:1px solid black;
+    color:blueviolet;
+    /* text-align: justify; */
+    text-align: center;
+    /* direction:rtl; */
+    text-decoration: underline;
+    /* text-transform: uppercase; */
+     line-height: 45px;/* jaha se line start ho raha hai or niche ka gap=line height
+     agar line height 0 kar denge to sab line overlap ho jayga */
+     text-indent: 50px; /*pehla line kitna gap ke bad start hoga*/
+     letter-spacing: 3px;/* har letter ke bich ka space*/
+     word-spacing: 20px;/* har word ke bich ka space*/
+}
+/* img{
+    border:3px solid red;
+     vertical-align: top; 
+    vertical-align: middle;
+} */
+#text1{
+    margin-top: 20px;
+    width:700px;
+    border:1px solid black;
+    color:blueviolet;
+    text-align: center;
+     white-space: pre; 
+    /* white-space: nowrap; */
+    /* word-wrap: break-word; */
+}
+#shadow{
+    margin-top: 20px;
+    width:700px;
+    border:1px solid black;
+    font-size: 40px;
+     text-shadow: 3px -8px 4px red; /*horizontal distance of shadow , vertical distance of shadow ,  blur ,color of shadow*/
+
+}
+#writingmode{
+    margin-top: 20px;
+    width:700px;
+    border:1px solid black;
+    color:blueviolet;
+    writing-mode: vertical-lr;
+    /* writing-mode: vertical-rl; */
+}

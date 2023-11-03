@@ -1,0 +1,94 @@
+/* ab tak ham parent me property laga rahe the . ab hum child pe property lagayenge.
+bootstrap 3 position or float se responsive banata tha. bootstrap 4 me flex use hota hai */
+ .flex-container{
+    background-color:green ;
+    display: flex;
+    flex-wrap: wrap;
+ }
+ .flex-child{
+    background-color: rgb(150, 102, 12);
+    margin:20px;
+    padding: 20px;
+    width:200px;
+    text-align: center;
+ }
+
+ #one{
+     /*order= sab child ka order change kar sakte hai*/
+     order:2;
+/*flex-grow = agar extra space hai to  pura space grow karke cover or kis ratio me 
+               dusre child ke ke comparision me sabko 1 dene se barabar ratio me grow karega*/
+     flex-grow: 2;
+
+ }
+ #two{
+     order:3;
+     flex-grow: 1;
+}
+#three{
+     order:1;
+     flex-grow: 1;
+}
+/*flex shrink= agar nowrap laga hua hai or space kam hai to child kitne ratio me shrink karega*/ 
+.flex-container2{
+    background-color:red;
+    display: flex;
+ }
+ #onee{
+    flex-shrink: 1;
+ }
+ #twoo{
+    flex-shrink: 0;
+}
+#threee{
+    flex-shrink: 3;
+}
+#four{
+    flex-shrink: 2;
+}
+#five{
+    flex-shrink: 4;
+}
+#six{
+    flex-shrink: 1;
+}
+#seven{
+    flex-shrink: 1;
+}
+/*flex-basis= initial width kitna rahega child ka.badme change hoga agar shrink ya kuchh or hua to.
+        isko dekhne ke liye flex child se width ko comment kar sakte ho
+        flex basis ke sath flex grow laga bhi sakte hai or nai bhi. nai lagane pe wo apna initial width 
+        lega or lagane pe grow karega ratio me agar space bacha hoga to*/
+
+.flex-container3{
+    background-color:green ;
+    display: flex;
+    flex-wrap: wrap;
+ }
+ #ab{
+    flex-basis:500px;
+    /* flex-grow: 1; */
+ }
+ #bc{
+   flex-basis: 100px;
+   /* flex-grow: 1; */
+ }
+ #cd{
+    flex-basis: 250px;
+    /* flex-grow: 1; */
+ }
+ /*align-self: child ko kaha align karna hai*/
+ .flex-container4{
+    background-color:red ;
+    display: flex;
+    height:400px;
+ }
+ #wx{
+    align-self: flex-start;
+ }
+ #xy{
+    align-self:center;
+ }
+ #yz{
+    align-self:flex-end;
+ }

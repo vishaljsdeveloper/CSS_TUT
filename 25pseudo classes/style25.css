@@ -1,0 +1,38 @@
+/* kisi bhi element ke special state ko pseudo class bolte hain.
+jaise anchor tag pe mouse hover karte hai to uska color change hota hai.
+mouse hover karna uska state hua. ya click kar diya gaya hai wo visited hai wo bhi state hai.
+syntax=
+selector:pseudo-class{
+ } 
+ bahut jada hai pseudo classes search kar lena */
+
+ /* li:first-child{
+     color:red;
+ }
+  li:hover first-child{
+     color:red;
+ }
+   li:hover last-child{
+     color:red;
+ }
+li:nth-child(4){
+    color:red;
+} */
+/*ab mai fourth child ko highlight karna chahta hun*/
+/* li:nth-child(4){
+    color:red;
+}  or
+li:nth-last-child(2){
+    color:red;
+}*/
+/*ab mai odd child ko highlight karna chahta hun . even le sath bhi kar sakta hun*/
+/* li:nth-child(odd){
+    color:red;
+} */
+/*hum pattern bhi bana sakte hai*/
+/* li:nth-child(2n+0){
+    color:red;
+} */
+input:focus{
+    border:3px solid red;
+}

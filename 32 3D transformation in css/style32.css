@@ -1,0 +1,33 @@
+/* 3D= x axis, y axis , z axis.
+term used : - 
+perspective: kisi bhi object ko kitne distance se dekh rahe ho.
+perspective origin : kis angle se dekh rahe ho. 
+syntax: transform: perspective(300px) rotate3d();
+perspective-origin:50% 50%;
+maily we used rotate*/
+
+#cover{
+  border:2px solid red;
+  height: 200px;
+  width:200px;
+  margin:150px;
+}
+
+#content{
+    height: 200px;
+    width:200px;
+    background-color: yellowgreen;
+    /* transform: perspective(300px) rotate3d(0,0,0,20deg); sab zero hai to koi changes nai aayga.
+    rotate 3d me 4 perameter hote hai x-axis se kitna dur,y-axis se kitna dur,z-axis se kitna dur,degree of rotation */
+    /* transform: perspective(300px) rotate3d(50,0,0,20deg); */
+    /* transform: perspective(300px) rotate3d(0,50,0,20deg); */
+    /* transform: perspective(300px) rotate3d(0,0,50,20deg); */
+    /* transform: perspective(300px) rotate3d(0,50,50,20deg); */
+    /* transform: perspective(300px) translate(0px, 0px, 0px); 0 0 0 pe kuchh nai hoga
+    translate me 3 argument hota hai x-axis se kitna dur,y-axis se kitna dur,z-axis se kitna dur*/
+    /* transform: perspective(300px) translate3d(50px, 0px, 0px); */
+    /* transform: perspective(300px) translate3d(0px, 50px, 0px); */
+    /* transform: perspective(300px) translate3d(0px, 0px, 50px); */
+    /* transform: perspective(300px) translate3d(0px, 0px, -50px); */
+    transform: perspective(300px) translate3d(50px, 50px, 50px);
+}

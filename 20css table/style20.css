@@ -1,0 +1,60 @@
+#table1{
+    border: 1px solid black;
+    /* border-collapse: collapse; */
+    /* border collapse sabka border mila dega.by default ye separate hota hai */
+    border-spacing: 15px 25px;
+    /* border spacing use karne ke liye border collapse hatana parega .
+    isme margin nai hota hai is liye border spacing use hota hai */
+    /* empty-cells: hide; ye agar koi td empty hai to usko hide kar dega */
+}
+#caption1{
+    border: 1px solid black;
+    caption-side: bottom;/*by default top hota hai*/
+}
+.tr1{
+    border: 1px solid black;
+    /* is se ye pata chalta hai ki tr pe border nai lagta hai. */
+}
+.th1{
+    border: 1px solid black;
+    height: 30px;
+    padding:15px;
+    text-align: center;
+    vertical-align: top;
+}
+.td1{
+    border: 1px solid black;
+    height:25px;
+    padding:5px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#table2{
+    border: 1px solid black;
+    empty-cells: hide;
+    border-collapse: collapse;
+    /* width:300px;
+    table-layout: auto;
+    table layout fixed me sab  td equal space lega. auto me browser decide karega */
+    width:100%;
+    table-layout: fixed;
+}
+#caption2{
+    border: 1px solid black;
+    caption-side: top;/*by default top hota hai*/
+}
+.th2{
+    border: 1px solid black;
+    height: 30px;
+    padding:15px;
+    text-align: center;
+    vertical-align: top;
+}
+.td2{
+    border: 1px solid black;
+    height:25px;
+    padding:5px;
+    text-align: center;
+    vertical-align: middle;
+}

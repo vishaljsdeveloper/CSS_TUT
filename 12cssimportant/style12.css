@@ -1,0 +1,12 @@
+div{
+    border:1px solid red !important;
+}
+div{
+    border:1px solid rgb(0, 255, 85);
+}
+/*1.priority follow larega . number 1 inline
+2.order follow karega . jo last me likha ho
+3. !important priority or order ko bypass kar dega
+iska use not recommended hai jab khud code likhte ho to.
+iska use tab hota hai jab koi plugin ka style change karna hota hai jo
+usme predefined rehta hai*/

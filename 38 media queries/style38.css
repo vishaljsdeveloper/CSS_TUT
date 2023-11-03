@@ -1,0 +1,55 @@
+#div1{
+    width:70%;
+    float:left;/*float lagate hi next div iske side se start hoga agar fit hua to*/
+    background-color: lawngreen;
+}
+#div2{
+   width:30%;
+   float:left;
+   background-color: rosybrown;
+}
+@media screen and (max-width: 768px){/*max width matlab yaha tak ye kaam karega*/
+    #div1{
+        width:50%;
+    }
+    #div2{
+        width:50%;
+    }
+}
+@media screen and (max-width: 400px){
+    #div1{
+        width:100%;
+    }
+    #div2{
+        width:100%;
+        color:white;
+        background-color: black;
+    }
+}
+@media screen and (min-width: 768px){/*min width matlab kam se kam itna chahiye . is wwidth
+                                     par or iske uper hi kaam karega*/
+    #div1{
+        width:50%;
+    }
+    #div2{
+        width:50%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 768px){/*bas is range me ye kam karega*/
+    #div1{
+        width:50%;
+    }
+    #div2{
+        width:50%;
+    }
+}
+@media screen and (min-width: 768px) or (max-width: 768px){/*ya to min width wala logic ya max width wala logic*/
+    #div1{
+        width:50%;
+    }
+    #div2{
+        width:50%;
+    }
+}
+/*images or video ko responi=sive bana ne ka tarika hai width ko 100% kar do or hieght ko auto kar do
+we should also know bootstrap or other frameworks to make it resposive easily*/

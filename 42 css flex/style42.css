@@ -1,0 +1,80 @@
+/* flexbox se koi bhi flexible or responsive design bina float or position ke bana sakte hai. */
+.flex-container{
+    background-color: indianred;
+    display:flex;/*apne sare children ko flexible bana diya*/
+    flex-direction: row;/*row, row-reverse,column,column-reverse*/
+    /* flex-wrap: nowrap;  apne aap div ko chhota kar dega kyunki 1 hi line me show karna hai*/
+    flex-wrap: wrap;/*ye 100px hi rakhega or baki ke child ko niche le aayga*/
+    /*flex-wrap: wrap-reverse;*//*ye ulta direction me wrap karega*/
+    /* flex-flow: row wrap; ek hi property se dono chij ho gaya */
+}
+.flex-child{
+    
+    background-color: wheat;
+    margin:20px;
+    padding: 20px;
+    width:120px;
+    /* display:inline-block; ye child pe lagta hai na ki parent par or ye flexible nai hai*/
+}
+.flex-container2{
+    background-color:blue ;
+    display: flex;
+    flex-flow: row wrap;
+    
+    /*ab hum teeno child ko horizontally middle me layenge*/
+    justify-content: center;/*other values= flex-start(default). flex-end,space-around,space between etc*/
+    /* ab hum child me horizontally space dena sikhte hai */
+    /*justify-content: space-around;*//*har child ke left or right me barabar space rahega*/
+    justify-content: space-between;/*horizontally har child ke bich  me barabar space rahega*/
+    height:400px;/*jaise hi parent ko height denge waise hi child bhi expand karega parent ke height tak
+                 usko hum align-items  karke control karte hai . height item ka apna
+                 aa jayga .by default ye streched rehta hai. or ye center me lane ke bhi kaam aata hai */
+    align-items: center; /*other values= streched(default),flex-start,flex-end . ye nai lagayenge to child 
+                         parent ke barabar height le lega*/
+                
+}
+.flex-child2{
+    background-color: wheat;
+    margin:20px;
+    padding: 20px;
+    width:120px;
+}
+.flex-container3{
+    background-color:green ;
+    display: flex;
+    flex-flow: row wrap;
+    height: 400px;
+    align-items: stretch;
+    /* justify-content: space-between; ye horizontally kaam karta hai or align-content 
+        vertically wahi kaam karta hai */
+        align-content: space-around;/*defaault value strech hoga to pura height cover karega. ye
+                                  wahi kam karega vertically jo justify-content karta hai horizontally.
+                                  or height item ke barabar ho jayga.*/
+
+}
+.flex-child3{
+background-color: aqua;
+margin:20px;
+padding: 20px;
+width:120px;
+text-align: center;
+}
+.flex-container4{
+    background-color:yellow;
+    display: flex;
+    flex-flow: row wrap;
+    height: 70vh;/*viewport ka 70% best hai ye bhi*/
+    justify-content: center;
+    align-items: center;
+    
+    /* align-content: center; align item ki jagah is situation par ye use karenge to bhi same acieve hoga
+    lekin align-item specially isiliye bana hai */
+
+}
+.flex-child4{
+    background-color: brown;
+    margin:20px;
+    padding: 20px;
+    width:120px;
+    text-align: center;
+    }

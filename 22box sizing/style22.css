@@ -1,0 +1,25 @@
+#div1{
+background-color: blueviolet;
+width:600px;
+height:150px;
+}
+
+#div2{
+    background-color:chocolate;
+    width:600px;
+    height:150px;
+    padding:50px;
+    border:10px solid brown;
+    /* box-sizing:border-box; */
+    }
+    /*div 2 me bhi same height oe width hai div 1 ke jaisa fir bhi bara hai
+    kyunki padding or border ka bhi area add ho gaya hai as per box model.
+    jab div 2 likh rahe hai to padding dikh raha hai hame.
+    
+    agar mujhe container nai badhana hai or padding ,border sab usi ka area ko le 
+    content ko chhota kar ke.
+    by default box-sizing:content-box; hota hai jisme padding ,border ka area
+    add hota hai
+    agar box-sizing:borer-box kar de to ulta ho jayga. content ka area chhota ho jayga or
+    padding, border sab usi me aa jayga
+    so basically box-sizing jo hai wo box model ka property ko change kar dega*/

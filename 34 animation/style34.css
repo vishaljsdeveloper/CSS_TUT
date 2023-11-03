@@ -1,0 +1,68 @@
+/* keyframe se hum define karte hai ki animation me kya hoga or kab hoga
+from= start jab hoga tab kya hoga
+to= jab khatam hoga tab kya hoga
+from or to ke jagah hume prcentage lena chahiye. percentage hamesha duration ka lega.
+0%= from
+100%=to*/
+@keyframes changecolor {
+/* from{background-color: red;}
+to  {background-color: green;} */
+0%{background-color: red;}
+25%{width:400px;}
+50%{background-color: orange;}
+75%{width:200px;}
+100%{background-color:yellow;}
+}
+/* ab har duration pe 2 property ya us se bhi jada property pe ek sath animation lagana sikhte hai div3 pe*/
+@keyframes lastdiv{
+    0%{background-color: red;border-radius: 0%;}/*2 property ek sath*/
+    10%{background-color:yellow;
+        border-radius: 10%;}/*aise bhi likh sakte hai css type*/
+    20%{background-color: blue;border-radius: 20%;}
+    30%{background-color: green;border-radius: 30%;}
+    40%{background-color: red;border-radius: 40%;}
+    50%{background-color: olive;border-radius: 50%;}
+    60%{background-color: orange;border-radius: 40%;}
+    70%{background-color: green;border-radius: 30%;}
+    80%{background-color: blue;border-radius: 20%;}
+    90%{background-color: yellow;border-radius: 10%;}
+    100%{background-color: red;border-radius: 0%;}
+}
+#animate{
+    background-color: red;
+    height: 200px;
+    width:200px;
+    animation-name: changecolor;/*konsa key frame animation ke liye iuse karna hai*/
+    animation-duration: 4s;
+    /* animation-delay: 2s; kitne der ke bad animation start  hoga */
+    animation-iteration-count:3;/*animation ko kitna bar karwana hai. isko hum infinite bar bhi kar sakte hai 
+                                 3 ke jagah infinite likh kar*/
+
+}
+/*ab 2 div me karte hai or 2nd me change karte hai*/
+#animate2{
+    background-color: red;
+    height: 200px;
+    width:200px;
+    animation-name: changecolor;/*konsa key frame animation ke liye iuse karna hai*/
+    animation-duration: 4s;
+    /* animation-delay: 2s; kitne der ke bad animation start  hoga */
+    animation-iteration-count:3;
+    /*ab tak same hai dono animation . ab change karenge*/
+    /*animation-direction: reverse;*//*ye ulta behave karega matlab keyframes me jo animation hai
+                                   wo 100% se start hoga or 0% tak jayga. 
+                                   reverse ke jagah hum alternate or alternate reverse bhi use kar sakte hai*/
+   /* animation-direction: alternate;*//*isme ek bar 0 to 100% jayga or 2nd time 100 to 0% jayga*/
+    animation-direction:alternate-reverse;/*isme pehla bar 100 to 0% jayga or 2nd bar 0 to 100% jayga*/
+    /*isme bhi transform 3D ke tarah timing-function laga sakte hai*/
+    animation-timing-function: linear;
+}
+#animate2{
+    background-color: red;
+    height: 300px;
+    width:300px;
+    animation-name: lastdiv;/*konsa key frame animation ke liye iuse karna hai*/
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}

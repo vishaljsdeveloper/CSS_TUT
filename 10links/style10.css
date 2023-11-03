@@ -1,0 +1,24 @@
+a{
+    text-decoration: none;/*underline hatayga*/
+    font-size: large;
+}
+ /* State  of  links = 4
+ 1.link = normal link
+ 2.visited = visited links
+ 3.hover = mouse hover
+ 4.active = click ke samay
+ note= link or visited hamesha hover ke uper hona chahiye or active state sabse niche hona chahiye.
+  */
+
+  a:link{
+      color:yellowgreen;
+  }
+  a:visited{
+      color:black;
+  }
+  a:hover{
+      color:pink;
+  }
+  a:active{
+      color:green;
+  }

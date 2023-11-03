@@ -1,0 +1,42 @@
+/* ab tak hum parent pe property laga rahe the ab child pe property lagayenge 
+*/
+.grid-container{
+    background-color: red;
+    padding:20px;
+    display:grid;
+    grid-template-columns: 200px 300px 200px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-content: space-evenly; 
+    /* height:400px; */
+    align-content: space-evenly;
+}
+.grid-item{
+    background-color:wheat;
+    border:1px solid black;
+    padding:20px;
+    font-size:40px;
+    text-align: center;
+}
+/* row ko merge karna or column ko merge karna sikhte hai */
+#grid1{
+     grid-column-start: 1;
+   /* grid-column-end: 3; isko short hand me bhi likh sakte hai grid-column se */
+    /* grid-column: 1/3;  kis line se kis line tak . start line/end line*/
+    /* or aise bhi likh sakte hai. span ke bad space hoga*/
+    /* grid-column: 1/span 2; isme end uper wale se 1 kam hoga kyunki uper hum line ki baat kar rahe
+    hai or yaha SPAN kitna lena hai total */
+    /* grid-row-start: 1;
+    grid-row-end: 4;  iske bhi shorthand me likh sakte hai*/
+   /* grid-row:1/4; span 3 bhi use kar sakte hai iske jagah for same output*/
+}
+/* ab agar hume kuchh rows or kuchh column ko ek sath merge karna ho to grid area use karte hai 
+syntax= startrow/startcolumn/endrow/endcolumn 
+grid area se hum name bhi define kar sakte hai . look at 43c.css*/
+#grid5{
+    grid-area: 1/2/3/4;
+    /* span bhi use kar sakte hai end me ki kitna span ka area cover karna hai
+    . uper walw jaisa same output nichre ke code se aayga. lekin line number best hai  */
+    /* grid-area:1/2/span 2/span 2; */
+
+}

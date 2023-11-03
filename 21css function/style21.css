@@ -1,0 +1,33 @@
+/* css me bhi function hote hai.
+ye () jaha bhi use hota hai wo sab function hai.
+we usees function like rgb ,rgba, url,gradient etc.
+few more important function are : 
+1.calc : div agar 70% le to hum chahte hai agar mobile me use ho to whitespace fix rahe
+ bas div chhota ho na ki dono 
+ 2. variable define kar sakte hai :root ke andar "--"dekar
+ manlo kuchh din ke bad brand ka colour change karna hai company ka
+  to ye aasan tarika hai change karne ka. waha use kar sakte hai isko, har jagah jakar color
+  change karne ke bajay hum bas variable ka color change karenge
+  or bhi function hai explore kar sakte hai,use nai hau unka jada*/
+
+ :root{
+     --primary-color:teal;
+     --btn-color:blueviolet;
+     --text-color:azure;
+ }
+
+
+#fun{
+    background-color: var(--primary-color);
+    height:200px;
+    /* width:70%; */
+    width: calc(100% - 200px);
+
+}
+a{
+    padding: 10px 30px;
+    margin:20px;
+    background-color:var(--btn-color);
+    color:azure;/*yaha bhi variable use kar sakte hai*/
+    text-decoration: none;
+}

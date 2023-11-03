@@ -1,0 +1,14 @@
+/* object fit ko foreground image ya video me use kar sakte hai . same background image jaisa hi hai ba snaam alag hai
+object fit me agar
+fill use kare to  ura image dikhayga ,blank space nai rahega lekin aspect ratio kharab ho jayga
+contain use kiya to pura image dikhayga ,blank space bach jayga or image resize ho jayga same aspect ratio me
+cover use kare to image kat jayga lekin blank space nai rahega or na hi aspect ratio bigrega 
+hum object position ka use kar ke bata sakte hai ki konse side ka image rehna chahiye */
+
+img{
+    border:1px solid red;
+    width:500px;
+    height:400px;
+    object-fit: contain;
+    object-position:left;
+}

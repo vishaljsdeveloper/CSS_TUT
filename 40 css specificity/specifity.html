@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>specificity </title>
+    <style>
+        pre{
+            color:red;
+            font-size: 23px;;
+        }
+    </style>
+</head>
+<body>
+    <pre>question: if one element is styled by more than one rule, which stylenwill be applicable?
+        answer: more specific rule will get more value.
+    </pre>
+    <pre>GENERAL RULE:
+        1. !important will over ride everything.
+        2.inline can override everything except !important.
+        3. External will work according to specifity.
+
+        SPECIFITY RULE :
+        1. # id selector has highest value
+        2. * Universal selector has lowest value
+
+        SPECIFITY RULE TRICK (POINT SYSTEM)
+        1. 10,000 point to !important
+        2. 1000 point to inline
+        3. 100 to id
+        4 10 to class, attribute or pseudo class
+        5 1 for element selector & pseudo element
+        6 0 for universal selector
+    </pre>
+    
+    <pre>
+        p{
+            color:green
+        }
+         total points=1
+
+        .red-p{
+            color:red;
+        }
+        total points= 10
+
+        div .red-p{
+            color:blue;
+        }
+        total points= 1 + 10 = 11 . so this will apply.
+    </pre>
+    <pre>
+        note: - if same rule written two or more times in external sheet then last rule will
+        be applicable.
+    </pre>
+
+    
+</body>
+</html>

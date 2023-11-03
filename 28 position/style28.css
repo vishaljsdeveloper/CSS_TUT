@@ -1,0 +1,75 @@
+ /* position 4 type ka hota hai mainly : - 
+1. static = ye default hai
+2.relative = apna abhi jo current position hai uske relative me ghumega. 
+ex: top 50px matlab abhi jo position hai us se 50px niche aayga kynki top ke relative me ayyga.
+left likhenge to right side me jayga kynki left ke relative me 50px lega.
+relative use karne par wo apn jagah se hilega jarur par kisi ko aane nai dega.
+relative me jab tak top,left etc nai denge tab tak wo apna space nai chhorega
+
+
+3.fixed= fixed me wo body ya screen ka whitespace ke relative move karega.
+scroll karne par bhi wo apne jagah pe fix rahega.
+position me jaise hi fixed  denge tab wo apna space chhor dega bina top,left etc diye. waha rahega lekin uska 
+space koi or bhi usi time occupy kar sakta hai orjo uska space occupy karega  wo cover ho jayga
+
+
+4.absolute= wo apne positioned parent(wo element jisme position laga hua hai static ke alawa koi or teeno me se) 
+ke relative move karega .agar parent positioned nai hai to wo nearest positioned parenet ke pas jayga .
+agar koi bhi parent nai mila to wo body ke relative move karega.
+position me jaise hi absolute  denge tab wo apna space chhor dega bina top,left etc diye. waha rahega lekin uska 
+space koi or bhi usi time occupy kar sakta hai orjo uska space occupy karega  wo cover ho jayga.
+jab parent me position de denge to wo apne parent ke relative move karega.
+absolute me top.left wtc me se koi oek define karna neccesary hai.
+
+relative, fixed  or absolute to hum ye 4 property ka use kar sakte hai: - 
+1.top
+2.bottom
+3.left
+4.right  */
+body{
+    height:1000px;
+}
+
+#parent{
+border:1px solid red;
+padding:20px;
+width:50%;
+margin:100px;
+position: relative;/*agar positioned parent nai denge to absolute body ke relative move karega*/
+}
+#one{
+    background-color: green;;
+    width:100px;
+    height:100px;
+    display:inline-block;/* teeno ko ek line me lane ke liye. inline block use karte hi gap aa jata hai bich me*/
+}
+#two{
+    background-color: yellow;
+    width:100px;
+    height:100px;
+    display:inline-block;
+    /* position: relative;
+    top:50px;
+    left:50px; */
+       /* absolute likhte hi iska space koi or occupy kar lega.. */
+    /* position:absolute;
+    top:0px;
+    left:0px */
+/*fixed is very useful= navigation bar ko fixed karna ho. chat ko fix karna ho etc*/
+    position:fixed;
+    bottom:10px;
+    right:10px;
+}
+#three{
+    background-color: blueviolet;
+    width:100px;
+    height:100px;
+    display:inline-block;
+}
+/*difference between absolute and relative:-
+1. relative apne position ke relative me move karta hai wahi absolute apne positioned parent ke relative me
+move karta hai agar nearest positioned parent koi nai hai to body ke relative me move karega
+
+2.relative apna original position me kisi ko space occupy nai karne deta hai wahi absolute turant apna
+space chhor deta hai chahe wo khud waha se hile ya na hile
+*/

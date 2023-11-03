@@ -1,0 +1,19 @@
+#overflow {
+background-color: whitesmoke;
+border:1px solid red;
+width:500px;
+height:300px;
+/* overflow:visible; ye by default hota hai. container ke bahar bhi content dikhega*/
+/* overflow:hidden;  isme div ke barabar hi content dikhayga baki content kat jayga*/
+/* overflow:scroll;  */
+/* bahar lana bhi nai hai or content bhi dikhana hai to scroll use karenge: 
+isme x-axis or y-axis dono me scroll aa jayga lekin hame bas y-axis me chahiye 
+uske liye hum overflow-x ko hidden kar denge*/
+/* overflow-x:hidden;
+overflow-y:scroll; */
+/* isme dikkat ye hai ki agar hamara content div se chhota bhi hua to bhi y axis pe scroll ayga hi 
+to sabse best hai "auto". jab jarurat hoga to scroll laga dega apne hisab se nai to nai lagayga. 
+dynamic content serve karne ke liye bhi best hai. */
+overflow:auto;
+resize:horizontal;
+}
